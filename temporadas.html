@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temporada 3 - Juego del Calamar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/temporadas.css"/>
+  <link rel="icon" href="favicon.ico"/>
+  <a href="#" id="btn-top"><img src="imagenes/boton3.png" alt="Volver arriba"></a>
+</head>
+<body>
+  <header class="banner">
+    <img src="./imagenes/1calamartemporada3.avif" alt="Temporada 3 - Imagen 1" class="banner-img"/>
+    <img src="./imagenes/2calamartemporada3.jpg" alt="Temporada 3 - Imagen 2" class="banner-img"/>
+  </header>
+
+  <main class="temporada3">
+    <h1>Temporada 3 – Resumen de Episodios</h1>
+
+    <article class="episodio">
+      <img src="./imagenes/primercapitulo.jpg" alt="Llaves y cuchillos" class="episodio-img popup"/>
+      <div>
+        <h2>1. Llaves y cuchillos</h2>
+        <p>Gi‑hun regresa al juego tras verse incapaz de detenerlo tras la revuelta del capítulo anterior. La competencia comienza con una prueba mortal que enfrenta la lógica de escapar con la supervivencia.</p>
+      </div>
+    </article>
+
+    <article class="episodio">
+      <img src="./imagenes/segundocapitulo.jpeg" alt="Noche estrellada" class="episodio-img popup"/>
+      <div>
+        <h2>2. Noche estrellada</h2>
+        <p>Durante la segunda prueba, los jugadores enfrentan sus miedos bajo la oscuridad. Las reglas cambian y se revelan nuevas traiciones con alianzas cortadas.</p>
+        <p>También nace la bebé de Jun‑hee, lo que altera por completo el sentido de la competición.</p>
+      </div>
+    </article>
+
+    <article class="episodio">
+      <img src="./imagenes/tercercapitulo.avif" alt="No es culpa tuya" class="episodio-img popup"/>
+      <div>
+        <h2>3. No es culpa tuya</h2>
+        <p>Llegan confrontaciones morales y un episodio cargado de emociones. Los personajes lidian con la culpa por sus acciones pasadas.</p>
+        <p>Se profundiza la historia de No‑eul y su vínculo con quienes asesinó sin intención.</p>
+      </div>
+    </article>
+
+    <article class="episodio">
+      <img src="./imagenes/cuartocapitulo.avif" alt="222" class="episodio-img popup"/>
+      <div>
+        <h2>4. 222</h2>
+        <p>El número 222 (la bebé) se convierte en pieza central del juego. Gi‑hun la protege a toda costa.</p>
+        <p>Este capítulo muestra crueldad extrema y plantea preguntas sobre el valor y el sacrificio.</p>
+      </div>
+    </article>
+
+    <article class="episodio">
+      <img src="./imagenes/quintocapitulo.jpg" alt="Círculo, triángulo, cuadrado" class="episodio-img popup"/>
+      <div>
+        <h2>5. Círculo, triángulo, cuadrado</h2>
+        <p>Pruebas sofisticadas y simbólicas, que reflejan el poder de los VIPs. Los juegos se vuelven más complejos.</p>
+        <p>In‑ho, el Front Man, muestra su autoridad y las consecuencias de su papel.</p>
+      </div>
+    </article>
+
+    <article class="episodio">
+      <img src="./imagenes/sextocapitulo.webp" alt="La naturaleza humana" class="episodio-img popup"/>
+      <div>
+        <h2>6. La naturaleza humana</h2>
+        <p>La gran final, “Sky Squid Game”, ocurre en tres torres separadas. Gi‑hun sacrifica su vida para salvar a la bebé y gana moralmente, aunque muere.</p>
+        <p>El Front Man cambia y la bebé se convierte en la ganadora. Aparece Cate Blanchett al final, anticipando más juegos globales.</p>
+      </div>
+    </article>
+
+    <section class="final-explicado">
+      <h2>Final explicado</h2>
+      <p>En el episodio final, Gi‑hun interviene para salvar a la bebé de Jun‑hee (“Player 222”). Su sacrificio refuerza el mensaje de humanidad frente a la crueldad del sistema de los juegos del calamar.</p>
+      <p>El Front Man, que resulta ser el hermano del detective Ha‑joon, queda impactado por ese acto altruista. Rechaza el premio y entrega el dinero a la niña. Más tarde aparece en Los Ángeles con la bebé y se revela que los juegos se están expandiendo globalmente, con la presencia de una figura encapuchada interpretada por Cate Blanchett.</p>
+      <p>El final dividió opiniones: algunos aplaudieron el sacrificio simbólico y el mensaje de esperanza; otros criticaron que se sintió apresurado y desconectado del tono original de la serie.</p>
+    </section>
+
+    <a href="./index.html" class="volver">Volver al Menú Principal</a>
+    <a href="index.html" class="boton-menu">
+  <img src="imagenes/iconomenu.png" alt="Volver al menú principal" />
+</a>
+
+  </main>
+
+  <div id="overlay">
+    <img src="" alt="Imagen ampliada" id="overlay-img"/>
+  </div>
+ <script>
+    document.querySelectorAll('.popup').forEach(img => {
+      img.addEventListener('click', () => {
+        const overlay = document.getElementById('overlay');
+        const overlayImg = document.getElementById('overlay-img');
+        overlayImg.src = img.src;
+        overlay.style.display = 'flex';
+      });
+    });
+    document.getElementById('overlay').addEventListener('click', () => {
+      document.getElementById('overlay').style.display = 'none';
+    });
+  </script>
+     <div class="audio-controles">
+  <img src="imagenes/botonceleste.png" alt="Reproducir música" id="btn-play" />
+  <img src="imagenes/botonrojo.png" alt="Pausar música" id="btn-pause" />
+  <audio id="musica" src="audio/cancion2.mp3" loop></audio>
+</div>
+<script>
+  const musica = document.getElementById('musica');
+  const btnPlay = document.getElementById('btn-play');
+  const btnPause = document.getElementById('btn-pause');
+
+  btnPlay.addEventListener('click', () => {
+    musica.play();
+  });
+
+  btnPause.addEventListener('click', () => {
+    musica.pause();
+  });
+</script>
+<footer>
+  <p>Hecho por Ezequiel Walter Herrera</p>
+  <p>© Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

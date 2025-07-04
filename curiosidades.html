@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curiosidades</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/curiosidades.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <audio id="musica" src="./audio/cancion3.mp3" loop></audio>
+
+  <div class="botones-fijos">
+    <img src="imagenes/botonceleste.png" id="play" alt="Reproducir" />
+    <img src="imagenes/botonrojo.png" id="pause" alt="Pausar" />
+    
+    <a href="#"><img src="imagenes/boton3.png" alt="Volver arriba" id="btn-top" /></a>
+  </div>
+
+  <main class="curiosidades">
+    <h1 class="titulo">Curiosidades</h1>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad1.jpg')">
+      <p>Es la serie más vista en la historia de Netflix. 265.2 millones de visualizaciones y 1,650 millones de horas reproducidas en los primeros 28 días.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad2.webp')">
+      <p>La segunda temporada tiene el mejor estreno de la historia de Netflix. Alcanzó 68 millones de vistas en solo 3 días.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad3.webp')">
+      <p>El dulce "dalgona" se volvió tan popular que se agotó en Corea tras su estreno.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad4.webp')">
+      <p>Es la serie más pirateada del mundo en la década según algunos sitios de descarga ilegal.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad5.jpg')">
+      <p>Los trajes verde/rosa están inspirados en uniformes escolares coreanos de los 70.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad6.jpg')">
+      <p>La franquicia ha generado más de 1,000 millones de dólares en valor para Netflix desde 2021.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad7.jpg')">
+      <p>El director afirma que ha perdido alrededor de 10 dientes por el estrés de hacer las 3 temporadas.</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad8.webp')">
+      <p>Las escaleras de la serie están inspiradas en la pintura "Relatividad".</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad9.webp')">
+      <p>Corea del Sur declaró la serie como "orgullo cultural nacional".</p>
+    </section>
+
+    <section class="curio" style="background-image: url('imagenes/curiosidad10.jpg')">
+      <p>Se usaron sets reales a escala completa, sin CGI en la mayoría de escenarios.</p>
+    </section>
+
+    <a href="index.html" class="volver">Volver al Menú Principal</a>
+    <a href="index.html" class="boton-menu">
+  <img src="imagenes/iconomenu.png" alt="Volver al menú principal" />
+  </a>
+
+  </main>
+
+  <script>
+    const audio = document.getElementById('musica');
+    document.getElementById('play').addEventListener('click', () => audio.play());
+    document.getElementById('pause').addEventListener('click', () => audio.pause());
+
+    // Botón volver arriba
+    const btnTop = document.getElementById('btn-top');
+    btnTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

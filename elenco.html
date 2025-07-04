@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elenco - Juego del Calamar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/elenco.css" />
+  <link rel="icon" href="favicon.ico" />
+  <a href="#" id="btn-top"><img src="imagenes/boton3.png" alt="Volver arriba"></a>
+</head>
+<body>
+  <header>
+    <img src="https://0.soompi.io/wp-content/uploads/2025/01/09185920/squid-game-2-poster.jpeg" alt="Banner Juego del Calamar" />
+  </header>
+  <main>
+    <section class="elenco-section">
+      <h1>Elenco Principal</h1>
+
+      <article class="actor-row">
+        <img src="./imagenes/protagonista.jpg" alt="Lee Jung-jae" class="actor-img" />
+        <div class="actor-info">
+          <h2>Lee Jung-jae</h2>
+          <p>Lee Jung-jae interpreta a Seong Gi-hun, un hombre con graves problemas económicos que acepta participar en el juego con la esperanza de ganar el premio millonario. Es el personaje principal de la historia y representa a quienes, a pesar de todo, conservan la empatía y la humanidad.</p>
+          <p>A lo largo de la serie, su evolución emocional y moral es clave. Pasa de ser un jugador desesperado a alguien que cuestiona el sistema detrás del juego y busca justicia. Su actuación fue ampliamente elogiada, y la serie marcó su regreso triunfal al drama coreano.</p>
+        </div>
+      </article>
+
+      <article class="actor-row">
+        <img src="./imagenes/mujer.jpg" alt="Jung Ho-yeon" class="actor-img" />
+        <div class="actor-info">
+          <h2>Jung Ho-yeon</h2>
+          <p>Jung Ho-yeon da vida a Kang Sae-byeok, una desertora de Corea del Norte que entra al juego para conseguir dinero y reunir a su familia. Su personaje es fuerte, reservado y determinado, lo que la convirtió rápidamente en una de las favoritas del público.</p>
+          <p>Este fue el primer papel actoral de Jung Ho-yeon, quien antes era modelo profesional. Su interpretación fue tan impactante que la catapultó al estrellato internacional, convirtiéndose en una figura destacada de la cultura pop coreana.</p>
+        </div>
+      </article>
+
+      <article class="actor-row">
+        <img src="./imagenes/reclutador.png" alt="Gong Yoo" class="actor-img" />
+        <div class="actor-info">
+          <h2>Gong Yoo</h2>
+          <p>Gong Yoo interpreta al misterioso hombre que recluta jugadores para el Juego del Calamar. Aunque aparece brevemente, su presencia es clave, ya que es el primer contacto entre los jugadores y la organización.</p>
+          <p>Su aparición generó gran expectativa entre los fans, ya que Gong Yoo es un actor muy reconocido en Corea del Sur. La escena en la que ofrece jugar a “ddakji” en la estación se volvió una de las más icónicas de la serie.</p>
+        </div>
+      </article>
+
+      <article class="actor-row">
+        <img src="./imagenes/villano.jpg" alt="Lee Byung-hun" class="actor-img" />
+        <div class="actor-info">
+          <h2>Lee Byung-hun</h2>
+          <p>Lee Byung-hun interpreta al enigmático "Front Man", el hombre detrás de la máscara negra que dirige todo lo que ocurre dentro del juego. Es autoritario, frío y metódico, y sus decisiones son fundamentales para el desarrollo de cada ronda mortal.</p>
+          <p>Con el paso de los episodios, se revela que el Front Man es en realidad el hermano del policía que investiga la desaparición de su hermano, agregando un fuerte componente emocional y trágico. Lee Byung-hun, uno de los actores coreanos más internacionales, aporta profundidad y presencia al personaje.</p>
+        </div>
+      </article>
+
+      <a href="./index.html" class="volver">Volver al Menú Principal</a>
+    </section>
+    <a href="index.html" class="boton-menu">
+  <img src="imagenes/iconomenu.png" alt="Volver al menú principal" />
+</a>
+
+</main>
+  <div class="audio-controles">
+  <img src="imagenes/botonceleste.png" alt="Reproducir" id="btn-play">
+  <img src="imagenes/botonrojo.png" alt="Pausar" id="btn-pause">
+  <audio id="musica" src="audio/cancion2.mp3" loop></audio>
+
+</div>
+
+<script>
+  const musica = document.getElementById('musica');
+  const btnPlay = document.getElementById('btn-play');
+  const btnPause = document.getElementById('btn-pause');
+
+  btnPlay.addEventListener('click', () => musica.play());
+  btnPause.addEventListener('click', () => musica.pause());
+</script>
+<footer>
+  <p>Hecho por Ezequiel Walter Herrera</p>
+  <p>© Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

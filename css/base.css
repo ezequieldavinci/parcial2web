@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'SquidGame';
+  src: url('../fonts/Game\ Of\ Squids.otf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #e50914;
+  font-family: 'SquidGame', 'Bebas Neue', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  background-color: rgba(22, 22, 22, 0.75);
+  color: #e50914;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+  margin-top: 40px;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 8px;
+  user-select: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.btn-rojo {
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 25px;
+  box-shadow: 0 0 8px #b50000;
+}
+
+.btn-rojo:hover,
+.btn-rojo:focus {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff2a2a;
+  outline: none;
+}
+@font-face {
+  font-family: 'SquidGame';
+  src: url('../fonts/GameOfSquids.ttf') format('truetype');
+} 
+
+h1, h2, h3 {
+  font-family: 'SquidGame', sans-serif;
+}
+
+body, p, a, nav, label, input, textarea, footer {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.audio-controles {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.audio-controles img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.audio-controles img:hover {
+  transform: scale(1.15);
+}
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  transition: transform 2s ease;
+}
+
+#btn-top img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#btn-top:hover {
+  transform: scale(1.15);
+}
+.boton-menu {
+  position: fixed;
+  right: 15px;
+  top: 7%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  font-size: 1em;
+  font-family: 'Bebas Neue', sans-serif;
+}

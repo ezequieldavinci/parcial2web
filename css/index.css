@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Squid Game';
+  src: url('../fonts/Game Of Squids.otf') format('opentype');
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding-bottom: 40px;
+}
+
+.intro-caja {
+  padding: 30px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.5em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #e50914;
+}
+
+.intro h1 {
+  font-family: 'Squid Game', sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px 40px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imagen-vertical {
+  width: 300px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.7);
+}
+
+.secciones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.secciones a {
+  font-size: 1.4em;
+  padding: 12px 20px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Squid Game', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secciones a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff3c3c;
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  color: white;
+  padding: 25px 10px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.botones-fijos {
+  position: fixed;
+  left: 15px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.botones-fijos img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.botones-fijos img:hover {
+  transform: scale(1.1);
+}
+
+.boton-menu {
+  position: fixed;
+  right: 15px;
+  top: 7%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-vertical {
+    width: 80%;
+    height: auto;
+    max-height: 450px;
+  }
+
+  .secciones {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .secciones a {
+    font-size: 1.3em;
+    padding: 12px 18px;
+  }
+}

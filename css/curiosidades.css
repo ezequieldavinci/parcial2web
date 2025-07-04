@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Squid Game';
+  src: url('../fonts/Game\ Of\ Squids.otf') format('opentype');
+}
+
+.curiosidades {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: white;
+}
+
+.titulo {
+  font-family: 'Squid Game', sans-serif;
+  font-size: 3.2em;
+  color: #e50914;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.curio {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.curio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.curio p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-family: 'Bebas Neue';
+}
+
+.botones-fijos {
+  position: fixed;
+  left: 15px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.botones-fijos img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.botones-fijos img:hover {
+  transform: scale(1.1);
+}
+
+.volver {
+  display: block;
+  margin: 60px auto 40px auto;
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volver:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff3c3c;
+}

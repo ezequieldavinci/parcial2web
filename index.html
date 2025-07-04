@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego del Calamar Oficial</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body background="imagenes/fondo.jpg">
+
+  <audio id="musica" src="audio/cancion1.mp3" loop></audio>
+
+  <div class="botones-fijos">
+    <img src="imagenes/botonceleste.png" id="btn-play" alt="Reproducir música" />
+    <img src="imagenes/botonrojo.png" id="btn-pause" alt="Pausar música" />
+    <a href="#"><img src="imagenes/boton3.png" id="btn-top" alt="Volver arriba" /></a>
+  </div>
+
+  <a href="index.html" class="boton-menu">
+    <img src="imagenes/iconomenu.png" alt="Volver al menú principal" />
+  </a>
+
+  <main>
+    <div class="wrapper">
+      <section class="intro-caja">
+        <article class="intro">
+          <h1>Bienvenidos al Juego del Calamar</h1>
+          <p>
+            El juego del calamar es una serie de Netflix sobre un concurso mortal en el que participan personas con dificultades económicas.
+            Los jugadores compiten en una serie de juegos infantiles para ganar un gran premio en dinero. La serie mezcla drama, suspenso y crítica social.
+          </p>
+        </article>
+      </section>
+
+      <section class="contenido">
+        <aside>
+          <img class="imagen-vertical" src="https://wallpapercave.com/wp/wp9939669.jpg" alt="imagen-vertical1" />
+        </aside>
+
+        <nav class="secciones">
+          <a href="elenco.html" class="boton">Elenco</a>
+          <a href="temporadas.html" class="boton">Temporada 3</a>
+          <a href="contacto.html" class="boton">Contacto</a>
+          <a href="curiosidades.html" class="boton">Curiosidades</a>
+          <a href="mantenimiento.html" class="boton">Sobre la serie</a>
+        </nav>
+
+        <aside>
+          <img class="imagen-vertical" src="https://wallpapercave.com/wp/wp9939649.jpg" alt="imagen-vertical2" />
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho por Ezequiel Walter Herrera</p>
+    <p>© Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const musica = document.getElementById('musica');
+    const btnPlay = document.getElementById('btn-play');
+    const btnPause = document.getElementById('btn-pause');
+
+    btnPlay.addEventListener('click', () => musica.play());
+    btnPause.addEventListener('click', () => musica.pause());
+
+    document.getElementById('btn-top').addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

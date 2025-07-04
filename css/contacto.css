@@ -1,0 +1,44 @@
+.fondo-contacto {
+  background: url('../imagenes/contacto.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  color: rgb(228, 39, 39);
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'SquidGame', sans-serif;
+  color: #e50914;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="submit"]{
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1em;
+}
+
+.volver-btn {
+  margin-top: 15px;
+  text-align: center;
+}
