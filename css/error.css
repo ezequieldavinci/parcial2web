@@ -1,4 +1,9 @@
-.fondo-error {
+@font-face {
+  font-family: 'SquidGame';
+  src: url('../fonts/Game\ Of\ Squids.otf') format('opentype');
+}
+
+.fondo-mantenimiento {
   background: url('../imagenes/error.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
@@ -7,37 +12,40 @@
   align-items: center;
 }
 
-.recuadro-error {
+.recuadro-mantenimiento {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
   max-width: 600px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-.recuadro-error h1 {
+.recuadro-mantenimiento h1 {
+  font-family: 'SquidGame', sans-serif;
   font-size: 3em;
   margin-bottom: 20px;
-  font-family: 'Squid Game', sans-serif;
   color: #e50914;
 }
 
-.volver {
+.recuadro-mantenimiento p {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+
+.recuadro-mantenimiento .volver {
   display: inline-block;
-  margin-top: 20px;
-  background-color: #e50914;
-  color: #fff;
   padding: 12px 26px;
-  border-radius: 10px;
-  font-size: 1.2em;
-  text-align: center;
+  background-color: #e50914;
+  color: white;
   text-decoration: none;
-  font-family: 'Bebas Neue', sans-serif;
+  border-radius: 8px;
+  font-size: 1.2em;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.volver:hover {
+.recuadro-mantenimiento .volver:hover {
   transform: scale(1.05);
   box-shadow: 0 0 12px #ff3c3c;
 }
